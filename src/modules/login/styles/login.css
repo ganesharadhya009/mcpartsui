@@ -1,0 +1,339 @@
+.side-banner-logo {
+  width: 346.58px;
+  height: 272.13px;
+  margin-left: 27.71px;
+  margin-right: 27.71px;
+}
+
+@media screen and (max-width: 1024px) {
+  .side-banner-logo {
+    width: 227.29px;
+    height: 191.63px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .mcparts-logo-side-banner {
+    width: 141px;
+    height: 32px;
+    margin-left: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.layout-wrapper {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #f9fafb;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .layout-wrapper {
+    height: 100vh;
+  }
+}
+
+.side-banner-box {
+  background-color: #2B97A4;
+  width: 100%;
+  height: 280px;
+  order: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .side-banner-box {
+    width: 402px;
+    height: 100%;
+    order: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.content-wrapper {
+  height: 100%;
+  min-height: calc(100vh - 280px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 56px;
+}
+
+@media (min-width: 1024px) {
+  .content-wrapper {
+    height: 100%;
+    width: calc(100% - 402px);
+    padding-top: 0px;
+  }
+}
+
+.mcparts-logo-box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  height: 56px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .mcparts-logo-box {
+    position: unset;
+    width: 135.57px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 32px;
+    height: 40px;
+    background-color: unset;
+  }
+}
+
+.sidebar-logo-box {
+  width: 50%;
+  height: auto;
+  margin-left: 27.71px;
+  margin-right: 27.71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+@media (min-width: 1024px) {
+  .sidebar-logo-box {
+    width: 346.58px;
+    height: 272.13px;
+    padding: 0px;
+  }
+}
+
+.bottom-side-banner {
+  background-color: #00BCA1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  gap: 16px;
+  height: auto;
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .bottom-side-banner {
+    height: 228px;
+    width: auto;
+  }
+}
+
+.login-card {
+  width: auto;
+  height: auto;
+  top: 167px;
+  left: 544px;
+  padding: 56px;
+  gap: 32px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-height: 600px) {
+  .bottom-side-banner {
+    height: auto;
+  }
+  .side-banner-logo {
+    width: 75%;
+    height: auto;
+  }
+  .sidebar-logo-box {
+    width: 75%;
+    height: auto;
+  }
+}
+
+.login-title {
+  width: 588px;
+  height: 76px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 588px;
+  gap: 16px;
+}
+
+@media (min-width: 1024px) {
+  .login-card {
+    height: auto;
+  }
+}
+
+@media (max-width: 1080px) {
+  .login-title {
+    width: 500px;
+    height: 76px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .login-title {
+    width: auto;
+    height: 76px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 16px;
+  }
+
+  .bottom-side-banner {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .sidebar-logo-box {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .side-banner-logo {
+    width: 90%;
+    height: auto;
+  }
+
+  .side-banner-box {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .login-card {
+    padding: 30px;
+  }
+
+  body {
+    box-sizing: unset;
+    width: 100%;
+  }
+}
+
+.profile-reset-password {
+  width: 342px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+@media (max-width: 650px) {
+  .login-title {
+    width: auto;
+    height: 76px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 16px;
+  }
+
+  .bottom-side-banner {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .sidebar-logo-box {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .side-banner-logo {
+    width: 90%;
+    height: auto;
+  }
+
+  .side-banner-box {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .login-card {
+    padding: 30px;
+  }
+
+  body {
+    box-sizing: unset;
+    width: 100%;
+  }
+
+  .profile-reset-password {
+    width: auto;
+  }
+}
+
+.forgot-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 310px;
+  height: 40px;
+  padding: 0px 16px 0px 16px;
+  gap: 8px;
+  border-radius: 8px 0px 0px 0px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-nav-link {
+  text-decoration: none;
+}

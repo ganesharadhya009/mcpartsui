@@ -1,0 +1,32 @@
+trigger:
+  branches:
+    include:
+      - dev
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+  - task: UseNode@1
+    inputs:
+      version: '16.x'
+
+  - script: |
+      npm install
+      npm run build
+      workingDirectory: $(directory)
+    displayName: 'Install Dependencies and Build Vite App'
+
+  - script: dir "$(System.DefaultWorkingDirectory)"  # Lists root directory files
+    displayName: 'List files in root directory'
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
+      Contents: '**'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: '$(Build.ArtifactStagingDirectory)/dist'
+      artifactName: 'drop'
